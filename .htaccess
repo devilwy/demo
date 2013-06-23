@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteCond $1 !^(index\.php|images|static|upload|robots\.txt)
+	RewriteRule ^(.*)$ index.php/$1 [L]
+
+	#<RewriterRule>
+	#	    <LookFor>http://(/d+)/.cloudm/.cn/repos/</LookFor>
+	#	    <SendTo>http://svn.cloudm.cn/repos/blog?uid=$1</SendTo>
+	#</RewriterRule>
+
+</IfModule>
+
